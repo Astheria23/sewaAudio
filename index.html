@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Rental Audio</title>
+</head>
+
+<body>
+    <header class="bg-gray-800 text-white p-4">
+        <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold">Guna-Audio</h1>
+            <!-- Humberger -->
+            <div class="lg:hidden">
+                <button id="hamburger" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar -->
+            <nav class="hidden lg:flex items-center space-x-4">
+                <ul class="flex space-x-4">
+                    <li>
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="Search" class="border border-gray-300 px-2 py-1 rounded">
+                        <button type="submit" class="bg-gray-500 text-white px-4 py-1 rounded">Search</button>
+                    </form>
+                    </li>
+                    <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="bg-cover text-white py-48 ">
+        <div id="desc" class="container mx-auto text-center rounded">
+            <h1 class="text-5xl font-bold mb-4 ">Sewa SoundSystem Berkualitas di Bandung</h1>
+            <p class="text-lg mb-20">Temukan peralatan audio terbaik untuk acara Anda.</p>
+            <button id="button"
+                class="bg-white text-indigo-800 px-8 py-4 mt rounded-full hover:bg-yellow-400 transition ">Lihat
+                Barang</button>
+        </div>
+    </section>
+
+    <!-- Product List Section -->
+    <section id="product-list" class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold m-4 ">Daftar Barang</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Product 1 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/ampegBA112.png" alt="ampegBA112" class="w-28" />
+                <h3 class="text-lg font-bold">Bass Amplifier AmpegBA112</h3>
+                <p class="text-gray-600">Harga: $100</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/behringerB1800XP.png" alt="behringerB1800XP" class="w-28" />
+                <h3 class="text-lg font-bold">Subwoofer BehringerB1800XP</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/behringerx32.png" alt="behringerx32" class="w-28" />
+                <h3 class="text-lg font-bold">Mixer Behringerx32</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/eurolliveF1320D.png" alt="eurolliveF1320D" class="w-28" />
+                <h3 class="text-lg font-bold">Speaker EurolliveF1320D</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/jazzbazz.png" alt="jazzbazz" class="w-28" />
+                <h3 class="text-lg font-bold">Bass Jazzbazz</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/lespaul.png" alt="lespaul" class="w-28" />
+                <h3 class="text-lg font-bold">Gitar Gibson Lespaul</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 7 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/marshalljcm800.png" alt="marshalljcm800" class="w-28" />
+                <h3 class="text-lg font-bold">Amplifier MarshallJCM800</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 8 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/rolandvad507.png" alt="rolandvad507" class="w-28" />
+                <h3 class="text-lg font-bold">DrumSet Rolandvad507</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 9 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/shuresm58.png" alt="shuresm58" class="w-28" />
+                <h3 class="text-lg font-bold">MIC Shure SM58</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+                 <!-- Product 10 -->
+                 <div class="bg-white p-4 rounded shadow-md">
+                    <img src="./assets/shuresm57.png" alt="shuresm57" class="w-28" />
+                    <h3 class="text-lg font-bold">MIC Shure SM57</h3>
+                    <p class="text-gray-600">Harga: $50</p>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+                </div>
+            <!-- Product 11 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/Stratocaster.png" alt="Stratocaster" class="w-28" />
+                <h3 class="text-lg font-bold">Gitar Fender Stratocaster</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+            <!-- Product 12 -->
+            <div class="bg-white p-4 rounded shadow-md">
+                <img src="./assets/YamahaQ2031.png" alt="YamahaQ2031" class="w-28" />
+                <h3 class="text-lg font-bold">EQ YamahaQ2031</h3>
+                <p class="text-gray-600">Harga: $50</p>
+                <button
+                    class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-yellow-400 duration-100">Sewa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg">Didirikan pada tahun 2010, Guna Audio telah menjelma menjadi mitra yang dapat diandalkan
+                untuk acara, pesta, konser, dan lainnya. Kami bersemangat tentang suara dan berdedikasi untuk
+                menyediakan peralatan terbaik untuk meningkatkan pengalaman audio Anda.</p>
+            <p class="text-lg">Mengapa Memilih Guna Audio:</p>
+            <p class="text-lg">- Peralatan Berkualitas: Kami berinvestasi dalam peralatan audio mutakhir untuk
+                memberikan suara yang jernih.</p>
+            <p class="text-lg">- Tim Profesional: Tim berpengalaman kami berdedikasi untuk memberikan layanan dan
+                dukungan yang luar biasa.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact</h2>
+            <p class="text-lg">For inquiries and bookings, please contact us at:</p>
+            <p class="text-lg font-bold">Email: gunaaudio@gmail.com</p>
+            <p class="text-lg font-bold">Phone / Whatsapp: +62 8312 1607 277</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 GUNA-AUDIO. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
